@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sidebar1{
+            width: 200px;
+            height: 100%;
+            background-color: sandybrown;
+            position: fixed;
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            overflow-x: hidden; /* Disable horizontal scroll */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        .main1{
+            width: 700px;
+            height: 500px;
+            background-color: slategray;
+            margin-left: 200px;
+        }
+
+        .sidebar1 a:hover {
+         color: #f1f1f1;
+        }
+
+        .sidebar{
+            width: 0px;
+            height: 100%;
+            background-color: sandybrown;
+            position: fixed;
+            /* z-index: 1; */
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            /* padding-top: 60px; */
+        }
+
+        .main{
+            width: 700px;
+            height: 500px;
+            background-color: slategray;
+            margin-left: 0px;
+        }
+
+        .sidebar span{
+            float: right;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sidebar" id="mySidenav">
+        <span style="font-size: 30px;cursor:pointer" onclick="closeNav()">X</span>
+ <br>
+    <ul>
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact</li>
+    </ul>
+</div>
+
+    <div id="main" class="main">
+        <span style="font-size: 30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
+        <h1>Ini Konten Utama</h1>
+    </div>
+
+    <script>
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      
+      /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="widht=device-width , initial-scale.0">
+            <title>Layar</title>
+            
+        </head>
+
+        <style>
+
+            .container{
+                margin: 50px auto;
+                width: 600px;
+                height: 500px;
+            }
+
+            .kotaklayar{
+                width: 600px;
+                height: 300px;
+                background-color: black;
+                border: 5px solid red;
+            }
+
+            .kotaktombol{
+                width: 600px;
+                height: 90px;
+                border: 5px solid;
+
+            }
+
+            .tombolnya{
+                width: 140px;
+                height: 80px;
+                border: 2px solid black;
+                margin: 5px 5px 5px 5px;
+                float: left;
+                box-sizing: border-box;
+
+            }
+
+            .buttonku {
+                margin: 30px auto;
+                width: auto;
+                height: auto;
+                border-radius: 10px;
+            }
+            
+        </style>
+
+
+        <body>
+
+            <div class="container">
+
+                <div id="tombol" class="kotaklayar">
+                </div>
+
+                    <div class="kotaktombol">
+
+                        <div class="tombolnya" onclick="tombol1()" style="border-color: royalblue;">
+
+                        </div>
+
+                        <div class="tombolnya" onclick="tombol2()" style="border-color: red;">
+
+                        </div>
+
+                        <div class="tombolnya" onclick="tombol3()" style="border-color:green;">
+
+                        </div>
+
+                        <div class="tombolnya" onclick="tombol4()" style="border-color: yellow;">
+
+                        </div>
+
+
+                    </div>
+
+                    <button class="buttonku" onclick="reset()" id="buttonreset" style="background-color: burlywood; border-color: black ;"> Reset </button>
+
+               
+
+
+                
+            </div>
+            
+        </body>
+
+        <script>
+
+            function tombol1() {
+                document.getElementById('tombol').style.backgroundColor="blue";
+            }
+
+            function tombol2() {
+                document.getElementById('tombol').style.backgroundColor="red";
+            }
+
+            function tombol3() {
+                document.getElementById('tombol').style.backgroundColor="green";
+            }
+
+            function tombol4() {
+                document.getElementById('tombol').style.backgroundColor="yellow";
+            }
+
+            function reset(){
+                document.getElementById('tombol').style.backgroundColor="black";
+            }
+
+        </script>
+
+        </html>

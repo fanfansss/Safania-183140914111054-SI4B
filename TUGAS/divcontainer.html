@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .container{
+        width: 800px;
+        height: 1800px;
+        border: 2px solid;
+        margin:auto;
+        position: relative;
+    }
+
+    .content{ 
+        position: absolute;
+        opacity: 0.2;
+        width: 200px;
+        height: 50px;
+        background: rgb(0, 0, 0); /* Fallback color */
+        top:40px;
+        /* color: #f1f1f1; */
+        left: 300px;
+        }
+    .judul{
+        width: 800px;
+        height: 200px;
+        border:  1px solid;
+        padding: 20px;
+        box-sizing: border-box;
+        text-shadow: 3px 2px rgb(236, 155, 232);
+        text-align: center;
+    }
+    
+    .menu{
+        width: 800px;
+        height: 50px;
+        border:  1px solid;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color:whitesmoke;
+    }
+
+    .menu a{
+        text-decoration: none;
+        color: salmon;
+    }
+
+    .menu a:hover{
+        background-color: wheat;
+        width: 800px;
+        height: 200px;
+    }
+
+    .banner{
+        width: 800px;
+        height: 300px;
+        
+        padding: 50px;
+        box-sizing: border-box;
+        background-color: darksalmon;
+        background-image: url(ini.jpg);
+        background-size: cover;
+        background-position:center;
+    }
+
+    .artikel{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .konten{
+        background-color: blanchedalmond;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .konten img{
+            float: left;
+            padding: 20px 20px;
+        }
+
+    .gallery{
+        background-color: turquoise;
+        margin: 5px 5px 5px 5px;
+        width: 190px;
+        height: 100px;
+        float: left ; 
+        background-image: url(macan.jpg);
+        background-size: cover;
+    }  
+
+    .ribbon{
+        width: 128px; 
+        height: 128px;
+        position: absolute; 
+        background-image: url(twitter.png);
+        left: 690px;
+        top: -1%;
+        }
+
+    .button{
+        position: fixed;
+        width: 200px;
+        height: 150px;
+        border: 1px solid;
+        top: 1%;
+        right:0.5%;
+        box-sizing: border-box;
+        background-color:salmon;
+        border-radius: 25px;
+    }  
+
+    .kotak{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }  
+
+    .cobaevent1{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }  
+
+    .cobaevent2{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+    }  
+    
+    </style>
+</head>
+<body>
+
+    <div class="button">
+        <br>
+        <center>
+        <button type="button" onclick="ubahwarna_dark()">Mode Malam Hari</button> 
+        <br> 
+        <br>
+        <button type="button" onclick="ubahwarna_light()">Mode Siang Hari</button>
+        </center>
+    </div>
+
+    <div class="container">
+        <div class="content">
+
+        </div>
+
+        <div class="ribbon">
+        </div>
+    <div class="judul">
+        <h1>Website saya</h1><br>
+        <h4>Je m​'appelle Safania</h4>
+    </div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Halaman</a>
+    </div>
+    <div class="banner"></div>
+    <div class="artikel">
+        <h3>Introducing by Name</h3>
+        <p>Ditulis oleh Saya Aku Kamu</p>
+    </div>
+
+    <div class="konten img">
+        
+    </div>
+
+    <div id="konten" class="konten">
+        <img width="25%" height="25%" src= "rose.jpg">
+        <p>Introducing by Name
+            There are also distinctions between formal and informal introductions, as well as singular versus plural introductions, as noted in the tables in this and the subsequent section.
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section.
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section.
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section. 
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section. 
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section. 
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section. </p>
+        <p>
+            In this section. 
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section. <br>
+            In this section. 
+            Kia ora! New Zealand Scholarships build potential leaders. Our scholars leave with a world-class education, lifelong friendships and vital skills to strengthen their careers and home countries.
+
+            In this section.  
+        </p>    
+    </div>
+
+    <div class="pembungkusgallery">
+        <div class="gallery">
+            <div class="thumbnail">
+                    <h3>Judul Berita</h3>
+                    <p>ini adalah isi</p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="gallery">
+        2
+            </div>
+            <div class="gallery">
+                3
+                    </div>
+                    <div class="gallery">
+                        4
+                            </div>
+                            <div class="gallery">
+                                5
+                                    </div>
+                                    <div class="gallery">
+                                        6
+                                            </div>
+                                            <div class="gallery">
+                                                7
+                                                    </div>
+                                                    <div class="gallery">
+                                                        8
+                                                            </div>
+    </div>
+
+    <div id="cobaeventku" class="kotak" onmousedown="divkelakuan()" onmouseup="divkelakuan1()">
+
+    </div>
+
+    <script>
+
+        function ubahwarna_dark(){
+            document.getElementById('konten').style.backgroundColor="black";
+            document.getElementById('konten').style.color="white";
+        }
+
+        function ubahwarna_light(){
+            document.getElementById('konten').style.backgroundColor=" blanchedalmond";
+            document.getElementById('konten').style.color="black";
+        }
+
+        function divkelakuan(){
+            document.getElementById('cobaeventku').className="cobaevent1";
+        }
+
+        function divkelakuan1(){
+            document.getElementById('cobaeventku').className="cobaevent2";
+        }
+    </script>
+</body>
+</html>
