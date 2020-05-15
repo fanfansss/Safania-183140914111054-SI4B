@@ -1,0 +1,25 @@
+{"produk" : [ 
+    {
+      "merek" : "Ini Buku",
+      "harga" : 120000,
+      "image" : "book1.png"
+    },
+    {
+      "merek" : "The Boy, The Mole, The Fox and The Horse",
+      "harga" : 100000,
+      "image" :"book2.png"
+    },
+    { "merek" :"Mind Platter",
+      "harga" :250000,
+      "image":"book3.png"
+    },
+    { "merek":"Regenerate", 
+    "harga":340000,
+    "image" : "book4.png"
+    },
+    { "merek":"The Boy Who Was Raised As a Dog",
+      "harga" :140000,
+      "image":"book5.png"
+    }
+  ]
+  }
